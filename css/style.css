@@ -15,7 +15,66 @@
    font-style: normal;
    font-display: swap;
 }
+/*GLOBAL STYLES*/
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
+/*BODY*/
 body{
-   font-family: 'Outfit', sans-serif;
+   font-family: "Outfit", sans-serif;
+   font-size: 15px;
+   background-color: #d6e2f0;
+}
+
+/*CONTAINER*/
+.container{
+   width: 100%;
+   max-width: 340px;
+   padding: 0px 10px;
+   margin: 150px auto;
+}
+
+/*CARD*/
+.card {
+   background-color: #fff;
+   padding: 15px;
+   border-radius: 10px;
+   text-align: center;
+}
+.card__img-box {
+   margin: 0px 0px 30px 0px;
+   width: 100%;
+}
+.card__img {
+   width: 100%;
+   border-radius: 10px;
+}
+.card__info{
+   padding: 0px 20px;
+}
+.card__title {
+   font-size: 17px;
+   font-weight: 800;
+   color: hsl(218, 44%, 22%);
+   margin: 0px 0px 20px 0px;
+}
+.card__text {
+   color: hsl(220, 15%, 55%);
+
+}
+@media (max-width: 375px) {
+   .card__info{
+      padding: 0px 10px;
+   }
+   .card__title {
+      font-size: 16px;
+   }
+   .card__text {
+      font-size: 14;
+   }
 }
